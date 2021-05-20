@@ -1,0 +1,20 @@
+[package]
+name = "milkshake"
+version = "0.1.0"
+authors = ["David Oniani <onianidavid@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+# cargo build --release && strip target/release/milkshake && upx --best --lzma target/release/milkshake && ll target/release
+
+# rustup target add wasm32-unknown-unknown && \
+# cargo build --target wasm32-unknown-unknown && \
+# cp target/wasm32-unknown-unknown/debug/milkshake.wasm .
+
+[dependencies]
+macroquad = "0.3"
+
+[profile.release]
+opt-level = "z"
+overflow-checks = true
