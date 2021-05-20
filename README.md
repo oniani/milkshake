@@ -2,6 +2,8 @@
 
 Milkshake: A Space Odyssey
 
+![Milkshake](./demo.png)
+
 ## Keybindings
 
 | Keybinding       | Description      |
